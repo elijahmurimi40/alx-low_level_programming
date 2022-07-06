@@ -4,5 +4,5 @@ int main(void)
 {
   _putchar('E');
   
-  return (0)
+  return (0);
 }
