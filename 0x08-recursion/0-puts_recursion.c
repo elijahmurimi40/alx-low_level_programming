@@ -1,6 +1,6 @@
 #include "main.h"
 
-void _puts_recursion_helper(char *s int n)
+void _puts_recursion_helper(char *s, int n)
 {
 	if (s[n] != '\0')
 	{
