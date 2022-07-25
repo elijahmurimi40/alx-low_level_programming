@@ -4,14 +4,14 @@
 char *create_array(unsigned int size, char c) {
 	if (size == 0) return (NULL);
 
-	char *arr;
+	char *p;
 	int n;
 
-	arr = (char *)malloc(sizeof(char) * size);
+	p = (char *)malloc(sizeof(char) * size);
 	n = size;
 
 	while (n >= 0) {
-		*(arr + n) = c;
+		*(p + n) = c;
 		n -= 1;
 	}
 	return (arr);
