@@ -2,7 +2,7 @@
 #include "main.h"
 
 char *create_array(unsigned int size, char c) {
-	if (size == 0) return NULL;
+	if (size == 0) return (NULL);
 
 	char *arr;
 	int n;
@@ -14,5 +14,5 @@ char *create_array(unsigned int size, char c) {
 		*(arr + n) = c;
 		n -= 1;
 	}
-	return *arr;
+	return (arr);
 }
