@@ -7,14 +7,14 @@ char *create_array(unsigned int size, char c) {
 
 	if (size == 0) return (NULL);
 
-	p = (char *)malloc(sizeof(char) * size);
-	n = size;
+	arr = (char *)malloc(sizeof(char) * size);
+	n = 0;
 
 	if (arr == NULL) return (NULL);
 
-	while (n >= 0) {
+	while (n < size) {
 		*(arr + n) = c;
-		n -= 1;
+		n += 1;
 	}
 	return (arr);
 }
